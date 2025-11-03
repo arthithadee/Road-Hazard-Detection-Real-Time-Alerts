@@ -1,60 +1,64 @@
-RDD2020 – Road Damage Dataset 2020
+# RDD2020 – Road Damage Dataset 2020
 
-RDD2020 (Road Damage Dataset 2020) is a large-scale, multi-country road damage image dataset created to support the development of deep learning-based road damage detection and classification systems.
+**RDD2020 (Road Damage Dataset 2020)** is a large-scale, multi-country road damage image dataset created to support the development of **deep learning-based road damage detection and classification systems**.
 
-Overview
+---
 
-Total Images: 26,336
+## Overview
 
-Total Annotations: Over 31,000 instances of road damage
+- **Total Images:** 26,336  
+- **Total Annotations:** Over 31,000 instances of road damage  
+- **Image Type:** Real-world road images captured under varying lighting and surface conditions  
+- **Purpose:** Benchmark dataset for training and evaluating deep learning models in road damage detection and classification  
 
-Image Type: Real-world road images captured under varying lighting and surface conditions
+---
 
-Purpose: Benchmark dataset for training and evaluating deep learning models in road damage detection and classification
+## Countries Covered
 
-Countries Covered
+- India  
+- Japan  
+- Czech Republic  
 
-India
+The **Indian subset** is particularly valuable for **real-time pothole detection applications**, as it includes local road conditions such as:
+- Uneven surfaces  
+- Drainage damage  
+- Monsoon-related potholes  
 
-Japan
+---
 
-Czech Republic
+## Data Collection
 
-The Indian subset is particularly valuable for real-time pothole detection applications, as it includes local road conditions such as:
+Images were captured using **smartphones mounted on vehicles**, simulating real-world driving conditions.  
+This makes the dataset suitable for **dash-cam** or **mobile-based AI applications**.
 
-Uneven surfaces
+Each image is accompanied by **bounding-box annotations** that specify the type and location of road damage.
 
-Drainage damage
+---
 
-Monsoon-related potholes
+## Annotation Details
 
-Data Collection
+Each annotation includes:  
+- **Class label** (damage type)  
+- **Bounding-box coordinates** (for object detection models such as YOLOv8)
 
-Images were captured using smartphones mounted on vehicles, simulating real-world driving conditions.
-This makes the dataset suitable for dash-cam or mobile-based AI applications.
+### Damage Categories
 
-Each image is accompanied by bounding-box annotations that specify the type and location of road damage.
+| Code | Damage Type          | Description                                           |
+|------|---------------------|-------------------------------------------------------|
+| D00  | Longitudinal Cracks  | Cracks running along the road’s length               |
+| D10  | Transverse Cracks    | Cracks running across the road’s width               |
+| D20  | Alligator Cracks     | Interconnected cracks forming a pattern like alligator skin |
+| D40  | Potholes             | Depressions or holes in the road surface caused by wear or water damage |
 
-Annotation Details
+---
 
-Each annotation includes:
+## Applications
 
-Class label (damage type)
+- Road damage classification and localization  
+- Automated maintenance reporting  
+- Real-time pothole detection systems  
+- Benchmarking of deep learning models for road inspection tasks  
 
-Bounding-box coordinates (for object detection models such as YOLOv8)
+---
 
-Damage Categories
-Code	Damage Type	Description
-D00	Longitudinal Cracks	Cracks running along the road’s length
-D10	Transverse Cracks	Cracks running across the road’s width
-D20	Alligator Cracks	Interconnected cracks forming a pattern like alligator skin
-D40	Potholes	Depressions or holes in the road surface caused by wear or water damage
-Applications
-
-Road damage classification and localization
-
-Automated maintenance reporting
-
-Real-time pothole detection systems
-
-Benchmarking of deep learning models for road inspection tasks
+ 
