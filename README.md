@@ -1,4 +1,4 @@
-#Real-Time Pothole Detection Using YOLOv8 & OpenCV
+Real-Time Pothole Detection Using YOLOv8 & OpenCV
 
 Potholes are depressions or breaks in the pavement surface of roads. They cause vehicle damage (tyre, suspension), increase accident risk, slow traffic, and require costly maintenance.
 
